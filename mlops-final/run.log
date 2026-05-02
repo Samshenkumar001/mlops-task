@@ -1,0 +1,17 @@
+2026-05-02T13:59:34 | INFO     | ============================================================
+2026-05-02T13:59:34 | INFO     | MLOps Signal Pipeline — Job Started
+2026-05-02T13:59:34 | INFO     | ============================================================
+2026-05-02T13:59:34 | INFO     | Loading config from: config.yaml
+2026-05-02T13:59:34 | INFO     | Config validated — seed=42, window=5, version=v1
+2026-05-02T13:59:34 | INFO     | Random seed set: 42
+2026-05-02T13:59:34 | INFO     | Loading dataset from: data.csv
+2026-05-02T13:59:34 | INFO     | Dataset loaded — 10000 rows, columns: ['timestamp', 'open', 'high', 'low', 'close', 'volume_btc', 'volume_usd']
+2026-05-02T13:59:34 | INFO     | Computing rolling mean with window=5
+2026-05-02T13:59:34 | INFO     | Rolling mean computed — 9996 valid rows (4 warm-up rows excluded as NaN)
+2026-05-02T13:59:34 | INFO     | Generating binary trading signal (1=buy, 0=hold)
+2026-05-02T13:59:34 | INFO     | Signal generated — 9996 rows evaluated, 4989 buy signals (1), 5007 hold signals (0)
+2026-05-02T13:59:34 | INFO     | rows_processed : 9996
+2026-05-02T13:59:34 | INFO     | signal_rate    : 0.4991
+2026-05-02T13:59:34 | INFO     | latency_ms     : 42
+2026-05-02T13:59:34 | INFO     | Metrics written to metrics.json
+2026-05-02T13:59:34 | INFO     | ============================================================
